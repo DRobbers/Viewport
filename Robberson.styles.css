@@ -1,7 +1,10 @@
-/* YOUR NAME GOES HERE */
+/* Dennis Robberson */
 
 /* --------------- ADD CSS RESET TO THE FILE HERE --------------- */
-
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+}
 
 
 /* ----- AUTOPREFIXER FOR VS CODE WAS USED FOR VENDOR PREFIXES ----- */
@@ -35,7 +38,20 @@
 /* CHANGE THE BODY'S BACKGROUND COLOR TO THE DARK GRAY IF THE USER PREFERS DARK MODE */
 
 /* --------------- END USER PREFERS DARK COLOR SCHEME QUERY --------------- */
+:root {
+    color-scheme: light dark;
+  }
+  body {
+    color: light-dark(#333b3c, #efefec);
+    background-color: light-dark(#efedea, #223a2c);
+  }
+  color: light-dark(black, white);
 
+
+color:light-dark(rgb(0 0 0),rgb(255 255 255));
+
+
+color:light-dark(var(--light),var(--dark));
 
 
 /* ----- HEADINGS ----- */
