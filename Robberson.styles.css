@@ -283,12 +283,26 @@ img{
 
 /* ---------- ADJUSTING RESPONSIVE IMAGE SIZE ---------- */
 /* --------------- BEGIN RESPONSIVE IMAGE ADJUST SIZES --------------- */
-    /* img{
+    img{
         width: 300px;
         max-width: 300px;
-    } */
-/* --------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
+        <source srcset=img media="(max-width: 300px)">
 
+    } 
+
+    <picture>
+
+    source srcset=img media="(max-width: 300px)";
+   
+    </picture>
+
+/*  not sure the right way to do just a single image size - Denny
+--------------- END RESPONSIVE IMAGE ADJUST SIZES --------------- */
+<picture>
+  <source srcset="img_smallflower.jpg" media="(max-width: 400px)">
+  <source srcset="img_flowers.jpg">
+  <img src="img_flowers.jpg" alt="Flowers">
+</picture>
 
 
 /* ---------- EXTRA LARGE SCREEN STYLES ---------- */
